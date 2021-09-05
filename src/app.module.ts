@@ -8,7 +8,7 @@ import { GuessesModule } from './guesses/guesses.module';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [],
+  imports: [DatabaseModule, UsersModule, GamesModule, GuessesModule],
   controllers: [AppController],
   providers: [AppService],
 })
